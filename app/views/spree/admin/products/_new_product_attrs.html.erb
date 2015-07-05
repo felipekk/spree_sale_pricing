@@ -16,7 +16,6 @@
 </div>
 
 <div data-hook="new_product_msrp" class="col-md-4">
-
   <%= f.field_container :price, :class => ['form-group'] do %>
     <%= f.label :msrp, Spree.t(:msrp) %> <span class="required">*</span><br />
     <%= f.text_field :msrp, :value => number_to_currency(@product.msrp, :unit => ''), :class => 'form-control' %>
